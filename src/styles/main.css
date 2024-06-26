@@ -1,0 +1,27 @@
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2f2f2f;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bfbfbf;
+  border-radius: 10px;
+  border: 3px solid #2f2f2f;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #bfbfbf #2f2f2f;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #222;
+  color: #eee;
+}
