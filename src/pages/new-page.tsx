@@ -25,13 +25,11 @@ export default function NewPage() {
   };
 
   return (
-    <div>
-      <Chat
-        messages={messages}
-        onSendMessage={handleSendMessage}
-        isAITyping={isLLMTyping}
-        aiTyping={currentLLMMessage}
-      />
-    </div>
+    <Chat
+      messages={messages}
+      onSendMessage={handleSendMessage}
+      isAITyping={isLLMTyping}
+      aiTyping={currentLLMMessage}
+    />
   );
 }

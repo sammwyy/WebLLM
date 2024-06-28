@@ -59,13 +59,11 @@ export default function ChatPage() {
   if (!chat) return <NotFoundPage />;
 
   return (
-    <div>
-      <Chat
-        messages={messages}
-        onSendMessage={handleSendMessage}
-        isAITyping={isLLMTyping}
-        aiTyping={currentLLMMessage}
-      />
-    </div>
+    <Chat
+      messages={messages}
+      onSendMessage={handleSendMessage}
+      isAITyping={isLLMTyping}
+      aiTyping={currentLLMMessage}
+    />
   );
 }

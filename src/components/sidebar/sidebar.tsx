@@ -136,12 +136,12 @@ function SidebarChat({ chat }: { chat: ChatHistory }) {
   }
 }
 
-export function Sidebar() {
+export function SidebarContent() {
   const { loadModel, modelProgress, modelState, modelError } = useLLM();
   const { chats } = useChats();
 
   return (
-    <div className="w-60 h-full flex flex-col justify-between gap-1 p-3 bg-black">
+    <div className="w-full h-full flex flex-col justify-between gap-1">
       <div className="flex flex-col gap-2">
         {/* Create a new chat. */}
         <Link to="/">
@@ -185,6 +185,14 @@ export function Sidebar() {
           </SelectContent>
         </Select>
       </div>
+    </div>
+  );
+}
+
+export function Sidebar() {
+  return (
+    <div className="w-60 h-full p-3 bg-black">
+      <SidebarContent />
     </div>
   );
 }
