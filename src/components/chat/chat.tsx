@@ -39,7 +39,7 @@ export function Chat(props: ChatProps) {
   }, [isLLMTyping, props.messages]);
 
   return (
-    <div className="flex flex-col justify-between h-full max-w-2xl p-3 m-autos">
+    <div className="flex flex-col justify-between h-full max-w-2xl p-3 m-auto">
       <div className="flex flex-col gap-3 overflow-auto p-3" ref={containerRef}>
         {/* Chat bubbles */}
         {props.messages.map((message, index) => (
